@@ -1,11 +1,11 @@
 node {
   stage('clean') {
-    ./gradlew clean
+    sh "./gradlew clean"
   }
   stage('build') {
-    ./gradlew build
+    sh "./gradlew build"
   }
   stage('test') {
-    ./gradlew test
+    sh "./gradlew test"
   }
 }
