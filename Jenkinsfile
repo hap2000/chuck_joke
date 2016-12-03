@@ -1,7 +1,7 @@
 node {
   stage('clean') {
-    pwd
-    ls -al
+    sh 'pwd'
+    ah 'ls -al'
     sh "./gradlew clean"
   }
   stage('build') {
