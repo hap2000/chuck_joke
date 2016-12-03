@@ -1,4 +1,7 @@
 node {
+  stage('checkout') {
+    checkout scm 
+  }
   stage('clean') {
     sh 'pwd'
     sh 'ls -al'
